@@ -1,33 +1,12 @@
-// TODO const User = require('./../models/user')
-
 exports.getUsers = async (req, res, next) => {
-
   res.status(200).json({
-    count: 1,
-    start: 0,
-    end: 1,
-    data: [
-      {
-        token: "$2423kd2d",
-        name: "Will"
-      }
-    ]
+    data: [{
+      name: "Will",
+      balance: "$32.00"
+    }]
   })
 }
 
-/*
-exports.getTour = catchAsync(async (req, res, next) => {
-  const tour = await Tour.findById(req.params.id)
+exports.createUser = async (req, res, next) => {
 
-  if (!tour) {
-    return next(new AppError('No tour found with that ID', 404))
-  }
-
-  res.status(200).json({
-    status: 'success',
-    data: {
-      data: tour
-    }
-  })
-})
-*/
+}
